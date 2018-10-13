@@ -4,6 +4,9 @@
   "description": "Test project to get up to speed with modern Javascript standards",
   "main": "index.js",
   "scripts": {
+    "prewebpack": "echo 1",
+    "webpack": "webpack",
+    "start": "webpack-dev-server --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,9 +20,12 @@
   },
   "homepage": "https://github.com/JasonKaz/js-bootcamp#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.3",
     "cross-env": "^5.2.0",
     "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
   },
   "prettier": {
     "trailingComma": "es5",
