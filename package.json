@@ -15,5 +15,16 @@
   "bugs": {
     "url": "https://github.com/JasonKaz/js-bootcamp/issues"
   },
-  "homepage": "https://github.com/JasonKaz/js-bootcamp#readme"
+  "homepage": "https://github.com/JasonKaz/js-bootcamp#readme",
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true
+  }
 }
