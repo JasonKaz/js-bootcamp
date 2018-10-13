@@ -1,0 +1,19 @@
+{
+  "name": "js-bootcamp",
+  "version": "1.0.0",
+  "description": "Test project to get up to speed with modern Javascript standards",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonKaz/js-bootcamp.git"
+  },
+  "author": "Jason Kaczmarsky",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonKaz/js-bootcamp/issues"
+  },
+  "homepage": "https://github.com/JasonKaz/js-bootcamp#readme"
+}
