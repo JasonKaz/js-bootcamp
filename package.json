@@ -36,9 +36,5 @@
     "tabWidth": 4,
     "semi": false,
     "singleQuote": true
-  },
-  "engines": {
-    "node": ">=10",
-    "npm": ">=5.6.0"
   }
 }
