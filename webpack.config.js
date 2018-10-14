@@ -7,7 +7,32 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'main.js'
+    filename: '[name].js'
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: { loader: 'babel-loader' },
+      }
+    ],
+  },
+  optimization: {
+    namedModules: true,
+    runtimeChunk: {
+      name: 'webpack.runtime',
+    },
+    splitChunks: {
+      minChunks: 2,
+      cacheGroups: {
+        vendor: {
+          chunks: 'all',
+          name: 'vendor',
+          test: module => module.context && module.context.includes('node_modules'),
+        },
+      }
+    },
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
